@@ -232,7 +232,7 @@
             <span class="author-block">Anonymous ACL submission</span>
           </div>
           <p style="text-align: center; font-size: 18px; margin-top: 20px;">
-          To check if you answered correctly and to see your score, visit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSerz9GUBfZFdMvN-nx8w50FA6HjIhEtYvz2cxdgbf1BCp-n4w/viewform?usp=sharing" target="_blank">Google Form</a>.
+          To check if you answered correctly and to see your score, visit the <a href="https://forms.gle/mnoYLFjJud4xuNdp7" target="_blank">Google Form</a>.
           </p>
           <p></p>
           <p style="margin-top: 1rem; font-size: 18px;">Your responses are valuable and will contribute to our research. Thank you for your participation.</p>
@@ -260,31 +260,369 @@
  
          <div class="content has-text-left" style="font-size: 18px;">
            <ol>
-            <!-- Items 1 to 20: Real vs. Generated -->
-            <!-- 반복적으로 구성 -->
-            <!-- 각 item마다 Real/Generated 오디오 한 개씩 -->
-          
-            <!-- START -->
-            {% for i in range(1, 21) %}
-            <li>
-              <p><strong>Real vs. Generated</strong></p>
-              <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
-                <div style="text-align: center;">
-                  <p><strong>Real</strong></p>
-                  <audio controls controlslist="nodownload">
-                    <source src="static/audio/item_{{ i }}_real.wav" type="audio/wav">
-                  </audio>
-                </div>
-                <div style="text-align: center;">
-                  <p><strong>Generated</strong></p>
-                  <audio controls controlslist="nodownload">
-                    <source src="static/audio/item_{{ i }}_gen.wav" type="audio/wav">
-                  </audio>
-                </div>
-              </div>
-            </li>
-            {% endfor %}
-            <!-- END -->
+            <ol>
+  <li>
+    <p><strong>squeak is the sound a bat makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_1_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_1_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>roar is the sound a Bear makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_2_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_2_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>buzz is the sound a Bee makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_3_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_3_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>meow is the sound a Cat makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_4_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_4_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>buck is the sound a Chicken makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_5_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_5_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>chirp is the sound a cicada makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_6_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_6_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>moo is the sound a Cattle makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_7_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_7_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>chirp is the sound a cricket makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_8_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_8_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>caw is the sound a crow makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_9_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_9_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>bellow is the sound a Deer makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_10_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_10_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>quack is the sound a Duck makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_11_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_11_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>bark is the sound a Dog makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_12_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_12_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>bray is the sound a Donkey makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_13_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_13_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>trumpet is the sound a Elephant makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_14_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_14_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>bugle is the sound a Elk makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_15_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_15_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>low is the sound a Gaur makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_16_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_16_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>bleat is the sound a Goat makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_17_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_17_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>hiss is the sound a Goose makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_18_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_18_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>snort is the sound a Pig makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_19_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_19_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <p><strong>roar is the sound a Tiger makes.</strong></p>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <p><strong>Real</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_20_real.wav" type="audio/wav">
+        </audio>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>Generated</strong></p>
+        <audio controls controlslist="nodownload">
+          <source src="static/audio/item_20_gen.wav" type="audio/wav">
+        </audio>
+      </div>
+    </div>
+  </li>
+</ol>
+
+
 
               <p style="text-align: center; font-size: 18px; margin-top: 20px;">
               To continue, please visit the <a href="https://ithsurvey3.github.io" target="_blank">Part 2-2</a>.
