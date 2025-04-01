@@ -260,136 +260,42 @@
  
          <div class="content has-text-left" style="font-size: 18px;">
            <ol>
-             <!-- Items 21 to 30: 2 real, 1 generated -->
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_21_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_21_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_21_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_22_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_22_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_22_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_23_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_23_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_23_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_24_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_24_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_24_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_25_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_25_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_25_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_26_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_26_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_26_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_27_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_27_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_27_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_28_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_28_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_28_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_29_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_29_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_29_3.wav" type="audio/wav">
-               </audio>
-             </li>
-             <li>
-               <p>Select the <strong>one generated sample.</strong></p>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_30_1.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_30_2.wav" type="audio/wav">
-               </audio>
-               <audio controls controlslist="nodownload">
-                 <source src="static/audio/item_30_3.wav" type="audio/wav">
-               </audio>
-             </li>
-
-         
+            <!-- Items 1 to 20: Real vs. Generated -->
+            <!-- 반복적으로 구성 -->
+            <!-- 각 item마다 Real/Generated 오디오 한 개씩 -->
+          
+            <!-- START -->
+            {% for i in range(1, 21) %}
+            <li>
+              <p><strong>Real vs. Generated</strong></p>
+              <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div style="text-align: center;">
+                  <p><strong>Real</strong></p>
+                  <audio controls controlslist="nodownload">
+                    <source src="static/audio/item_{{ i }}_real.wav" type="audio/wav">
+                  </audio>
+                </div>
+                <div style="text-align: center;">
+                  <p><strong>Generated</strong></p>
+                  <audio controls controlslist="nodownload">
+                    <source src="static/audio/item_{{ i }}_gen.wav" type="audio/wav">
+                  </audio>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+            <!-- END -->
 
               <p style="text-align: center; font-size: 18px; margin-top: 20px;">
               To continue, please visit the <a href="https://ithsurvey3.github.io" target="_blank">Part 2-2</a>.
               </p>
 
+            </ol>
+
+         
+
              
-           </ol>
+
          </div>
        </div>
      </div>
